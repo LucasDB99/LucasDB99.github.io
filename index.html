@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <script>
         function checkAnswer(event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); 
 
             const answer = document.getElementById("answer").value.toLowerCase();
-            const validAnswers = ["lasagna", "spaghetti", "sara","loempia","kaaskroket"]; // List of valid answers
+            const validAnswers = ["lasagne", "spaghetti", "sara","loempia","kaaskroket"]; 
 
             if (validAnswers.includes(answer)) {
-                window.location.href = "home.html"; // Redirect URL
+                window.location.href = "home.html"; 
             } else {
                 alert("Nope, erg dat je dit niet weet...");
             }
