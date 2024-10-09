@@ -22,5 +22,11 @@ function updateCountdown() {
 const interval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+mobileMenu.addEventListener('click', () => {
+    navList.classList.toggle('active'); // Toggle visibility of the nav list
+});
 
  
