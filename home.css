@@ -1,14 +1,15 @@
 body {
   color: aliceblue;
   display: flex;
+  flex-direction: column; /* Change to column layout */
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Use min-height instead of height */
+  padding: 20px; /* Add padding for mobile */
   background: linear-gradient(to right, #6a11cb, #2575fc);
   font-family: 'Arial', sans-serif;
   cursor: url('cur.png'), auto;
   margin: 0;
-  padding: 20px; /* Add padding for mobile */
 }
 
 .countdown-container {
@@ -64,8 +65,6 @@ ul {
   padding-left: 0; /* Remove padding for mobile */
   list-style-type: none; /* Remove bullets */
 }
-
-
 
 img {
   width: 250px;
