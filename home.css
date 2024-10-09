@@ -1,58 +1,68 @@
-.quote {
-    font-style: italic;
-    margin-top: 20px;
-    filter: drop-shadow(0 0 10px #89de9b)
-}
-
-.future-plans {
-    margin-top: 30px;
-}
-
-.photo-gallery {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.photo-gallery img {
-    width: 100px; /* Adjust as needed */
-    height: auto;
-    margin: 0 10px;
-}
-
 body {
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    font-family: 'Arial', sans-serif;
-    cursor: url('cur.png'),auto;
-  }
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  font-family: 'Arial', sans-serif;
+  cursor: url('cur.png'), auto;
+  margin: 0;
+  padding: 20px; /* Add padding for mobile */
+}
 
 .countdown-container {
-    text-align: center;
+  text-align: center;
 }
 
 #countdown {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 .time-block {
-    margin: 0 15px;
+  margin: 10px; /* Adjust margin for smaller screens */
+  flex: 1 0 45%; /* Allow blocks to take 45% of the width */
 }
 
 .time-block span {
-    display: block;
-    font-size: 48px;
+  display: block;
+  font-size: 36px; /* Adjust font size for mobile */
 }
 
 .label {
-    font-size: 16px;
-    color: hsl(0, 0%, 100%);
+  font-size: 14px; /* Adjust label font size for mobile */
+  color: hsl(0, 0%, 100%);
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+  filter: drop-shadow(0 0 10px #89de9b);
+}
+
+.future-plans {
+  margin-top: 30px;
+}
+
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin-top: 20px;
+}
+
+.photo-gallery img {
+  width: 80px; /* Adjust as needed */
+  height: auto;
+  margin: 5px; /* Adjust margin for smaller screens */
+}
+
+ul {
+  padding-left: 0; /* Remove padding for mobile */
+  list-style-type: none; /* Remove bullets */
 }
 
 
