@@ -10,19 +10,19 @@
             event.preventDefault(); 
 
             const answer = document.getElementById("answer").value.toLowerCase();
-            const validAnswers = ["lasagne", "spaghetti", "sara","loempia","kaaskroket","chips"]; 
+            const validAnswers = ["sara"]; 
 
             if (validAnswers.includes(answer)) {
-                window.location.href = "vraag2.html"; 
+                window.location.href = "vraag4.html"; 
             } else {
-                alert("Nope, erg dat je dit niet weet...");
+                alert("Think again women!");
             }
         }
     </script>
 </head>
 <body>
     <div class="form-container">
-        <h1>Wat is mijn favoriet eten?</h1>
+        <h1>Wie snurkt er het luidste?</h1>
         <form onsubmit="checkAnswer(event)">
 
             <input type="text" id="answer" name="answer" required>
